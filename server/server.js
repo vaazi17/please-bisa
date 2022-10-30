@@ -25,6 +25,6 @@ server.on("error",err => {
     console.log("Serever error",err)
 })
 
-server.listen(process.env.PORT,() => {
+server.listen(process.env.PORT || 8080,() => {
     console.log(`game start di ${lokasiTampilan}`)
 })
