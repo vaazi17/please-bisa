@@ -18,7 +18,6 @@ form.addEventListener("submit",(e) => {
     const chat = document.querySelector(".chat")
     const text = chat.value
     chat.value = ""
-
     sock.emit("message",text)
 })
 
